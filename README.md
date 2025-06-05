@@ -4,4 +4,4 @@
 
 Я использую базу sqlite по умолчанию, для своего режима работы, но если бы приложение работало в несколько потоков или было асинхронным, нужно было бы обязательно ставить например postgresql, так как sqlite блокирует базу для записи
 
-Запуск "gunicorn exchangerate.wsgi:application -c currency/gunicorn.conf.py" из папки с manage.py
+Запуск "gunicorn exchangerate.wsgi:application -c currency/gunicorn.conf.py" из папки с manage.py, миграции применены, база не пуста
