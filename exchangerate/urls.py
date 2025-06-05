@@ -7,5 +7,5 @@ from currency.views import get_current_usd
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('get-current-usd/', get_current_usd),
+    re_path(r'^get-current-usd/?$', get_current_usd),
 ]
